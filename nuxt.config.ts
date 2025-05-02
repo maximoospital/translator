@@ -1,8 +1,6 @@
 // nuxt.config.ts
 import { defineNuxtConfig } from 'nuxt/config'
 
-const repositoryName = 'translator' // Your GitHub repository subfolder name
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
   
