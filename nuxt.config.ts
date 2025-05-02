@@ -6,6 +6,9 @@ export default defineNuxtConfig({
     // prerender index route by default
     '/': { prerender: true },
   },
+  router: {
+    base: process.env.NODE_ENV === 'production' ? '/translator/' : '/',
+  },
 
   compatibilityDate: '2024-08-11',
 });
