@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '/': { prerender: true },
   },
   router: {
-    base: process.env.NODE_ENV === 'production' ? '/translator/' : '/',
+    base: process.env.NODE_ENV === 'github-pages' ? '/translator/' : '/',
   },
 
   compatibilityDate: '2024-08-11',
