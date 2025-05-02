@@ -5,12 +5,10 @@ const repositoryName = 'translator' // Your GitHub repository subfolder name
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  app: {
-    baseURL: `/${repositoryName}/`,
-  },
-  vite: {
-    base: `/${repositoryName}/`,
-  },
+  
+  router: {
+    base: '/translator/'
+  }
 
   routeRules: {
     '/': { prerender: true },
